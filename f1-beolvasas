@@ -12,7 +12,7 @@ public class KissJGabor20190319 {
       //ArrayList tipusú tömbbe fogjuk beolvasni aminek a neve carRefuelings
     private static ArrayList<CarRefueling> carRefuelings = new ArrayList<>();
 
-      // --- fájl metódusok
+      // --- fájl kezelés
     private static void inputFile(String fileName, String mode) {
         try {
             f = new RandomAccessFile(fileName, mode);
@@ -27,26 +27,7 @@ public class KissJGabor20190319 {
         }
         System.out.println("\t" + fileName + "... beolvasva!");
     }
-
-    private static void appendFile(String fileName, String mode, String str) {
-        try {
-            f = new RandomAccessFile(fileName, mode);
-            f.seek(f.length());     //a fájlmutatót a fájl végére mozgatja
-            f.writeBytes(str + "\n");
-            f.close();
-        } catch (IOException e) {
-            System.err.println(e.getMessage());
-            System.exit(1);
-        }
-    }
-
-    private static void deleteFile(String fileName) {
-        File file = new File(fileName);
-        if (file.exists()) {
-            file.delete();
-        }
-    }
-      // --- fájl metódusok vége
+      // --- fájl kezelés vége
       // --- fő program
     public static void main(String[] args) {
     
