@@ -1,0 +1,22 @@
+
+// az f5_b() közérthetőbben
+
+    private static void f5_b() {
+        int ntype = 0;
+        for (int i = 0; i < carRefuelings.size(); i++) {
+            if (carRefuelings.get(i).getId().substring(0, 1).equals("N")) {
+                if (!carRefuelings.get(i).getId().substring(1, 2).equals("A")) {
+                    ntype++;
+                }
+            }
+        }
+        String str = "N-típusú benzinkútnál " + ntype + " alkalommal tankolt.";
+        System.out.println(str);
+    }
+
+    public static void main(String[] args) {
+        f5_b();
+    }    
+
+//Output:
+//N-típusú benzinkútnál 5 alkalommal tankolt.
