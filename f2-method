@@ -1,0 +1,20 @@
+
+// az f2() közérthetőbben
+
+    private static void f2() {
+        double max = carRefuelings.get(0).getRange();
+        for (int i = 0; i < carRefuelings.size(); i++) {
+            if (carRefuelings.get(i).getRange() > max) {
+                max = carRefuelings.get(i).getRange();
+            }
+        }
+        String str = String.format("A leghosszabb út: %.1f km volt.", max);
+        System.out.println(str);
+    }
+    
+    public static void main(String[] args) {
+        f2b();
+    }    
+
+//Output:
+//A leghosszabb út: 740,0 km volt.
