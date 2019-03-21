@@ -1,0 +1,19 @@
+
+// az f3() közérthetőbben
+
+    private static void f3() {
+        double fuel = 0;
+        for (int i = 0; i < carRefuelings.size(); i++) {
+            fuel += carRefuelings.get(i).getQuantity();
+        }
+        String str = String.format("Összesen %.2f liter benzint tankolt.", fuel);
+        System.out.println(str);
+    }
+
+    
+    public static void main(String[] args) {
+        f2b();
+    }    
+
+//Output:
+//Összesen 16709,10 liter benzint tankolt.
