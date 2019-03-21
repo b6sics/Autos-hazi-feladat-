@@ -125,7 +125,6 @@ public class KissJGabor20190319 {
         for (CarRefueling carRefueling : carRefuelings) {
             if (carRefueling.getId().equals("NA")) {
                 na++;
-            } else {
             }
         }
         String str = before;
@@ -140,7 +139,6 @@ public class KissJGabor20190319 {
         for (CarRefueling carRefueling : carRefuelings) {
             if (carRefueling.getId().substring(0, 1).equals("N")) {
                 ntype++;
-            } else {
             }
         }
         String str = before;
