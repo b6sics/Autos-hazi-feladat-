@@ -13,7 +13,7 @@
     }
     
     public static void main(String[] args) {
-        f2b();
+        f2();
     }    
 
 //Output:
